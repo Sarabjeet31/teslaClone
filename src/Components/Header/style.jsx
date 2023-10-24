@@ -131,7 +131,8 @@ export const Content = styled.div`
     cursor: pointer;
     color: ${ props => props.textColor };
     &:hover{
-      background-color: rgba(90, 90, 90, 0.1);
+      background-color: ${ props => props.textColor === 'black' ? 'rgba(90, 90, 90, 0.1)' : 'white'};
+      color: ${ props => props.textColor === 'black' ? '' : 'black'};
     }
   }
   
@@ -156,10 +157,14 @@ export const Content1 = styled.div`
     transition: background-color 200ms ease-in;
     cursor: pointer;
     color: ${ props => props.textColor };
+  }
+  .none {
     &:hover{
-      background-color: rgba(90, 90, 90, 0.1);
+      background-color: ${ props => props.textColor === 'black' ? 'rgba(90, 90, 90, 0.1)' : 'white'};
+      color: ${ props => props.textColor === 'black' ? '' : 'black'};
     }
   }
+
 
   @media screen and (max-width: 500px){
     .none{

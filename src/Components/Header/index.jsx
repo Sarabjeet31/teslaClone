@@ -16,7 +16,6 @@ const Header = ({ textColor }) => {
       <div className='logo' >
       <Link to='/'>
         {textColor === 'white' ? <img src='/images/logoW.svg' alt='logo'/> : <img src='/images/logo.svg' alt='logo'/>}
-        
       </Link>
       </div>
       <Content textColor={ textColor }>
@@ -30,7 +29,7 @@ const Header = ({ textColor }) => {
       <Content1 textColor={ textColor }>
         <a href='#' className='none' >Shop</a>
         <a href='#' className='none'>Account</a>
-        <a href='#' onClick={()=> setOpen(true)} ><MenuIcon style={textColor === 'white' ? { fill: 'white' } : {}}/></a>
+        <a href='#' onClick={()=> setOpen(true)}><MenuIcon style={textColor === 'white' ? { fill: 'white' } : {}} /></a>
       </Content1>      
       <BurgerNav show={open}>
         <CloseWrapper>

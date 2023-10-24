@@ -4,6 +4,7 @@ import { Content, Wrapper } from './style'
 import Header from '../Header'
 
 const Home = () => {
+  document.title = 'Electric Cars, Solar & Clean Energy'
   return (
     <Wrapper>
       <Header textColor='black' />

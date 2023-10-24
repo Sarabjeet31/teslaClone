@@ -2,7 +2,7 @@
 import React from 'react'
 import { Wrapper,ContentTop,ContentMid, Content } from './styles'
 
-function SpecificSection({ title,desc,backgroundVideo,link,leftbtn,rightbtn,arrow,range,speed,hp,top }) {
+function SpecificSection({ title, desc, backgroundVideo, link, leftbtn, rightbtn, arrow, range, speed, hp, top }) {
 
   return (
     <Wrapper>

@@ -3,7 +3,7 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import { ButtonGroup, Buttons, DownArrow, ItemText, LeftButton, RightButton, Wrap } from './style';
 
-const Section = ({ title, desc, leftBtnText, rightBtnText, backgroundImg, backgroundVideo }) => {
+const Section = ({ title, desc, leftBtnText, rightBtnText, backgroundImg }) => {
   return (
     <Wrap bgImg={backgroundImg ? backgroundImg : undefined}>
       {/* {backgroundVideo ? (
