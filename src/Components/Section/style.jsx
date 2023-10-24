@@ -2,20 +2,12 @@ import styled from 'styled-components'
 
 export const Wrap = styled.div`
   z-index: 10;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image:  ${props => `url(${props.bgImg})`};;
-  /* background-image: ${props => `url("/images/${props.$bgImg})`}; */
-  .background-clip {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
