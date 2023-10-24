@@ -6,12 +6,19 @@ export const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image:  ${props => `url('/images/${props.bg}')`}; //url is by default in public section
+  /* background-image:  ${props => `url('/images/${props.bg}')`}; //url is by default in public section */
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
+
+  .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
   img{
     margin-top: 15px;
@@ -50,15 +57,16 @@ export const ContentTop = styled.div`
   text-align: center;
   padding-top: 16vh;
   h1{
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.5px;
     font-size: 2.5rem;
-    color: var(--teslaColor);
+    color: white;
   }
   p{
+    font-weight: 500;
     font-size: 0.9rem;
     padding: 5px;
-    color: rgba(59, 59, 59, 0.753);
+    color: white;
   }
   a{
     text-decoration: underline;

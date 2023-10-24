@@ -3,6 +3,7 @@ import Interior from "../Interior_Specs";
 import Specs from "../Gen_Spec";
 import SpecificSection from "../SpecificSection";
 import { Content, Wrapper } from "./styles";
+import Header from "../Header";
 // import Footer from "../Footer";
 
 const Model3 = () =>{
@@ -10,11 +11,12 @@ const Model3 = () =>{
   document.title = "Model 3 | Tesla";
   return(
     <Wrapper>
+      <Header textColor='white' />
       <Content>
         <SpecificSection 
         title="Model 3" 
         desc="Plaid" 
-        backgroundImg="model-3.jpg" 
+        backgroundVideo="videos/Model-3.webm" 
         arrow="true" 
         range='358'
         speed='3.1'

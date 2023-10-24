@@ -71,7 +71,6 @@ export const Wrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   z-index: 1;
-  
   .top{
     position: fixed;
     top: 0;
@@ -120,7 +119,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-wrap: nowrap;
-
+  
   a{
     padding: 7px 16px;
     font-size: 1rem;
@@ -130,6 +129,7 @@ export const Content = styled.div`
     border-radius: 10px;
     transition: background-color 200ms ease-in;
     cursor: pointer;
+    color: ${ props => props.textColor };
     &:hover{
       background-color: rgba(90, 90, 90, 0.1);
     }
@@ -155,6 +155,7 @@ export const Content1 = styled.div`
     border-radius: 10px;
     transition: background-color 200ms ease-in;
     cursor: pointer;
+    color: ${ props => props.textColor };
     &:hover{
       background-color: rgba(90, 90, 90, 0.1);
     }

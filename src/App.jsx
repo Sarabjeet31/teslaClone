@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <Container>
-        <Header />
         <Routes>
           <Route path="/" element={ <Home /> } />
           <Route path="/model-s" element={ <ModelS /> } />

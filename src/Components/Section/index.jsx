@@ -3,9 +3,14 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import { ButtonGroup, Buttons, DownArrow, ItemText, LeftButton, RightButton, Wrap } from './style';
 
-const Section = ({ title, desc, leftBtnText, rightBtnText, backgroundImg }) => {
+const Section = ({ title, desc, leftBtnText, rightBtnText, backgroundImg, backgroundVideo }) => {
   return (
-    <Wrap bgImg={backgroundImg}>
+    <Wrap bgImg={backgroundImg ? backgroundImg : undefined}>
+      {/* {backgroundVideo ? (
+      <video autoPlay loop playsInline className='background-clip'>
+        <source src={ backgroundVideo } type='video/webm' />
+      </video>
+      ) : (<></>)} */}
       <Fade bottom>
         <ItemText>
           <h1>{ title }</h1>

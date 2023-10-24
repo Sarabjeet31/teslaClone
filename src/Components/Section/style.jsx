@@ -9,6 +9,13 @@ export const Wrap = styled.div`
   background-repeat: no-repeat;
   background-image:  ${props => `url(${props.bgImg})`};;
   /* background-image: ${props => `url("/images/${props.$bgImg})`}; */
+  .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { Wrapper,ContentTop,ContentMid, Content,  } from './styles'
+import { Wrapper,ContentTop,ContentMid, Content } from './styles'
 
-function SpecificSection({ title,desc,backgroundImg,link,leftbtn,rightbtn,arrow,range,speed,hp,top }) {
+function SpecificSection({ title,desc,backgroundVideo,link,leftbtn,rightbtn,arrow,range,speed,hp,top }) {
 
   return (
-    <Wrapper bg={backgroundImg} >
+    <Wrapper>
+      <video autoPlay loop playsInline className='background-clip'>
+        <source src={ backgroundVideo } type='video/webm' />
+      </video>
       <ContentTop>
         <h1>{title}</h1>
         <p>{desc} <a href='#'>{link}</a></p>
