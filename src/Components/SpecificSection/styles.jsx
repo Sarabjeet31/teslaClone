@@ -18,6 +18,17 @@ export const Wrapper = styled.div`
     right: 0;
     bottom: 0;
     z-index: -1;
+    object-fit: cover;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   img{
